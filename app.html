@@ -1,0 +1,32 @@
+<div class="container">
+
+  <!-- Registration Page -->
+  <div *ngIf="currentPage === 'register'">
+    <h2>Registration</h2>
+    <form (ngSubmit)="register()">
+      <input type="text" placeholder="Name" [(ngModel)]="name" name="name" required>
+      <input type="email" placeholder="Email" [(ngModel)]="email" name="email" required>
+      <input type="password" placeholder="Password" [(ngModel)]="password" name="password" required>
+      <button type="submit">Register</button>
+    </form>
+    <p (click)="currentPage='login'" class="link">Already have account? Login</p>
+  </div>
+
+  <!-- Login Page -->
+  <div *ngIf="currentPage === 'login'">
+    <h2>Login</h2>
+    <form (ngSubmit)="login()">
+      <input type="email" placeholder="Email" [(ngModel)]="loginEmail" name="loginEmail" required>
+      <input type="password" placeholder="Password" [(ngModel)]="loginPassword" name="loginPassword" required>
+      <button type="submit">Login</button>
+    </form>
+    <p (click)="currentPage='register'" class="link">New user? Register</p>
+  </div>
+
+  <!-- Dashboard Page -->
+  <div *ngIf="currentPage === 'dashboard'">
+    <h2>Welcome to Dashboard 🎉</h2>
+    <button (click)="logout()">Logout</button>
+  </div>
+
+</div>
