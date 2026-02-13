@@ -59,7 +59,7 @@ function App() {
     }
   };
 
-  // ---------------- REGISTER PAGE ----------------
+  
   if (page === "register") {
     return (
       <div className="auth-container">
@@ -87,7 +87,7 @@ function App() {
     );
   }
 
-  // ---------------- LOGIN PAGE ----------------
+  
   if (page === "login") {
     return (
       <div className="auth-container">
@@ -114,7 +114,7 @@ function App() {
     );
   }
 
-  // ---------------- DASHBOARD ----------------
+  
   return (
     <div>
       <div className="navbar">
