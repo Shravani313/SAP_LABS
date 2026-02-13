@@ -4,7 +4,7 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Auth Pages */
+
 .auth-container {
   width: 300px;
   margin: 100px auto;
@@ -35,7 +35,7 @@ body {
   font-size: 14px;
 }
 
-/* Dashboard */
+
 .navbar {
   background-color: #ff5722;
   padding: 15px;
